@@ -8,7 +8,7 @@ type NavLinks = {
 
 const NavLinks: NavLinks[] = [
   {
-    label: "Folders",
+    label: "Home",
     to: "/",
   },
   {
