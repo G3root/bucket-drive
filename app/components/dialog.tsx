@@ -89,7 +89,7 @@ const DialogContent = ({
               onPress={values.close}
               className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[entering]:bg-accent data-[entering]:text-muted-foreground"
             >
-              <Icon name="Settings" className="h-4 w-4" />
+              <Icon name="X" className="h-4 w-4" />
               <span className="sr-only">Close</span>
             </Button>
           )}
@@ -110,6 +110,13 @@ const DialogHeader = ({
     )}
     {...props}
   />
+);
+
+const DialogDescription = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => (
+  <div className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 
 const DialogFooter = ({
@@ -144,4 +151,5 @@ export {
   DialogFooter,
   DialogTitle,
   Dialog,
+  DialogDescription,
 };
