@@ -2,6 +2,7 @@
 
 export const iconNames = [
   "X",
+  "Upload",
   "Settings",
   "Folders",
 ] as const
